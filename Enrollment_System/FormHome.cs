@@ -15,6 +15,7 @@ namespace Enrollment_System
         public FormHome()
         {
             InitializeComponent();
+            this.Text = "Welcome to Enrollment System";
         }
 
        
