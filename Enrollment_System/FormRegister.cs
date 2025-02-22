@@ -23,6 +23,10 @@ namespace Enrollment_System
 
         }
 
-
+        private void BtnLog_Click(object sender, EventArgs e)
+        {
+            new FormLogin().Show();
+            this.Hide();
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace Enrollment_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            BtnLogin loginForm = new BtnLogin();
+            FormLogin loginForm = new FormLogin();
             Application.Run(loginForm);
         }
     }

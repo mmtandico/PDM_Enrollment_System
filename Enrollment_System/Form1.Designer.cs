@@ -1,6 +1,6 @@
 ﻿namespace Enrollment_System
 {
-    partial class BtnLogin
+    partial class FormLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -154,6 +154,7 @@
             this.BtnReg.TabIndex = 7;
             this.BtnReg.Text = "REGISTER";
             this.BtnReg.UseVisualStyleBackColor = true;
+            this.BtnReg.Click += new System.EventHandler(this.BtnReg_Click);
             // 
             // ChkShowPass
             // 
@@ -179,7 +180,7 @@
             this.Btn_Login.UseVisualStyleBackColor = true;
             this.Btn_Login.Click += new System.EventHandler(this.Btn_Login_Click);
             // 
-            // BtnLogin
+            // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,7 +198,7 @@
             this.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Name = "BtnLogin";
+            this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
             this.panel1.ResumeLayout(false);

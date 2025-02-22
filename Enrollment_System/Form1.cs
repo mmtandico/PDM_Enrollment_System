@@ -5,11 +5,11 @@ using MySql.Data.MySqlClient;
 
 namespace Enrollment_System
 {
-    public partial class BtnLogin : Form
+    public partial class FormLogin : Form
     {
         private string connectionString = "server=localhost;database=PDM_Enrollment_DB;user=root;password=;";
 
-        public BtnLogin()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -62,6 +62,12 @@ namespace Enrollment_System
                     MessageBox.Show("Database Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void BtnReg_Click(object sender, EventArgs e)
+        {
+            new FormRegister().Show();
+            this.Hide();
         }
     }
 }

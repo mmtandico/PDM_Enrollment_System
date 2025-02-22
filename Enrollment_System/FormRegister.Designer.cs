@@ -44,6 +44,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnLog = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -96,7 +97,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(514, 344);
+            this.button2.Location = new System.Drawing.Point(467, 338);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 32);
             this.button2.TabIndex = 15;
@@ -107,7 +108,7 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(417, 344);
+            this.button1.Location = new System.Drawing.Point(379, 338);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 14;
@@ -227,12 +228,25 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "REGISTER";
             // 
+            // BtnLog
+            // 
+            this.BtnLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLog.ForeColor = System.Drawing.Color.White;
+            this.BtnLog.Location = new System.Drawing.Point(557, 338);
+            this.BtnLog.Name = "BtnLog";
+            this.BtnLog.Size = new System.Drawing.Size(75, 32);
+            this.BtnLog.TabIndex = 26;
+            this.BtnLog.Text = "LOGIN";
+            this.BtnLog.UseVisualStyleBackColor = true;
+            this.BtnLog.Click += new System.EventHandler(this.BtnLog_Click);
+            // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(650, 400);
+            this.Controls.Add(this.BtnLog);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.textBox3);
@@ -279,5 +293,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnLog;
     }
 }
