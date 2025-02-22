@@ -40,6 +40,8 @@
             this.BtnReg = new System.Windows.Forms.Button();
             this.ChkShowPass = new System.Windows.Forms.CheckBox();
             this.Btn_Login = new System.Windows.Forms.Button();
+            this.BtnExit = new System.Windows.Forms.Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbPDM)).BeginInit();
             this.SuspendLayout();
@@ -180,12 +182,43 @@
             this.Btn_Login.UseVisualStyleBackColor = true;
             this.Btn_Login.Click += new System.EventHandler(this.Btn_Login_Click);
             // 
+            // BtnExit
+            // 
+            this.BtnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(44)))), ((int)(((byte)(21)))));
+            this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExit.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExit.ForeColor = System.Drawing.Color.White;
+            this.BtnExit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnExit.Location = new System.Drawing.Point(606, 12);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(32, 27);
+            this.BtnExit.TabIndex = 10;
+            this.BtnExit.Text = "x";
+            this.BtnExit.UseVisualStyleBackColor = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(384, 22);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(61, 22);
+            this.guna2Button1.TabIndex = 11;
+            this.guna2Button1.Text = "guna2Button1";
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(650, 400);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.Btn_Login);
             this.Controls.Add(this.ChkShowPass);
             this.Controls.Add(this.BtnReg);
@@ -223,6 +256,8 @@
         private System.Windows.Forms.Button BtnReg;
         private System.Windows.Forms.CheckBox ChkShowPass;
         private System.Windows.Forms.Button Btn_Login;
+        private System.Windows.Forms.Button BtnExit;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
 

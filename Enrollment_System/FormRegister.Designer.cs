@@ -45,6 +45,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnLog = new System.Windows.Forms.Button();
+            this.BtnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -240,12 +241,28 @@
             this.BtnLog.UseVisualStyleBackColor = true;
             this.BtnLog.Click += new System.EventHandler(this.BtnLog_Click);
             // 
+            // BtnExit
+            // 
+            this.BtnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(44)))), ((int)(((byte)(21)))));
+            this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExit.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExit.ForeColor = System.Drawing.Color.White;
+            this.BtnExit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnExit.Location = new System.Drawing.Point(606, 12);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(32, 27);
+            this.BtnExit.TabIndex = 27;
+            this.BtnExit.Text = "x";
+            this.BtnExit.UseVisualStyleBackColor = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(650, 400);
+            this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnLog);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox1);
@@ -294,5 +311,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnLog;
+        private System.Windows.Forms.Button BtnExit;
     }
 }

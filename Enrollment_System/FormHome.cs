@@ -18,6 +18,14 @@ namespace Enrollment_System
             this.Text = "Welcome to Enrollment System";
         }
 
-       
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

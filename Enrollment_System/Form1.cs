@@ -69,5 +69,10 @@ namespace Enrollment_System
             new FormRegister().Show();
             this.Hide();
         }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
