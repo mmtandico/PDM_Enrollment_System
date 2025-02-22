@@ -25,6 +25,13 @@ namespace Enrollment_System
 
         private void BtnLogout_Click(object sender, EventArgs e)
         {
+            new FormLogin().Show();
+            this.Close();
+
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }
