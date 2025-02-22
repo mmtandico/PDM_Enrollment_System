@@ -32,20 +32,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BtnReg = new System.Windows.Forms.Button();
+            this.BtnSendOTP = new System.Windows.Forms.Button();
+            this.TxtEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxtOTP = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ChkShowPass = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnLog = new System.Windows.Forms.Button();
             this.BtnExit = new System.Windows.Forms.Button();
+            this.TxtPass = new System.Windows.Forms.TextBox();
+            this.TxtConfirmPass = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -94,50 +94,40 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button2
+            // BtnReg
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(467, 338);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 32);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "REGISTER";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReg.ForeColor = System.Drawing.Color.White;
+            this.BtnReg.Location = new System.Drawing.Point(467, 338);
+            this.BtnReg.Name = "BtnReg";
+            this.BtnReg.Size = new System.Drawing.Size(75, 32);
+            this.BtnReg.TabIndex = 7;
+            this.BtnReg.Text = "REGISTER";
+            this.BtnReg.UseVisualStyleBackColor = true;
+            this.BtnReg.Click += new System.EventHandler(this.BtnReg_Click);
             // 
-            // button1
+            // BtnSendOTP
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(379, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "SEND OTP";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnSendOTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSendOTP.ForeColor = System.Drawing.Color.White;
+            this.BtnSendOTP.Location = new System.Drawing.Point(379, 338);
+            this.BtnSendOTP.Name = "BtnSendOTP";
+            this.BtnSendOTP.Size = new System.Drawing.Size(75, 32);
+            this.BtnSendOTP.TabIndex = 6;
+            this.BtnSendOTP.Text = "SEND OTP";
+            this.BtnSendOTP.UseVisualStyleBackColor = true;
+            this.BtnSendOTP.Click += new System.EventHandler(this.BtnSendOTP_Click);
             // 
-            // textBox2
+            // TxtEmail
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Orange;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(417, 159);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(172, 23);
-            this.textBox2.TabIndex = 13;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Orange;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(417, 105);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 23);
-            this.textBox1.TabIndex = 12;
+            this.TxtEmail.BackColor = System.Drawing.Color.Orange;
+            this.TxtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtEmail.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtEmail.ForeColor = System.Drawing.Color.White;
+            this.TxtEmail.Location = new System.Drawing.Point(417, 105);
+            this.TxtEmail.Name = "TxtEmail";
+            this.TxtEmail.Size = new System.Drawing.Size(172, 23);
+            this.TxtEmail.TabIndex = 1;
             // 
             // label5
             // 
@@ -161,17 +151,16 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Email";
             // 
-            // textBox4
+            // TxtOTP
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Orange;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(417, 296);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PasswordChar = '*';
-            this.textBox4.Size = new System.Drawing.Size(172, 23);
-            this.textBox4.TabIndex = 21;
+            this.TxtOTP.BackColor = System.Drawing.Color.Orange;
+            this.TxtOTP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtOTP.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOTP.ForeColor = System.Drawing.Color.White;
+            this.TxtOTP.Location = new System.Drawing.Point(417, 296);
+            this.TxtOTP.Name = "TxtOTP";
+            this.TxtOTP.Size = new System.Drawing.Size(172, 23);
+            this.TxtOTP.TabIndex = 5;
             // 
             // label7
             // 
@@ -184,28 +173,17 @@
             this.label7.TabIndex = 20;
             this.label7.Text = "Email Verification";
             // 
-            // checkBox1
+            // ChkShowPass
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(417, 240);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(93, 17);
-            this.checkBox1.TabIndex = 24;
-            this.checkBox1.Text = "Show password";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.Orange;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(417, 213);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(172, 23);
-            this.textBox3.TabIndex = 23;
+            this.ChkShowPass.AutoSize = true;
+            this.ChkShowPass.ForeColor = System.Drawing.Color.White;
+            this.ChkShowPass.Location = new System.Drawing.Point(417, 240);
+            this.ChkShowPass.Name = "ChkShowPass";
+            this.ChkShowPass.Size = new System.Drawing.Size(93, 17);
+            this.ChkShowPass.TabIndex = 4;
+            this.ChkShowPass.Text = "Show password";
+            this.ChkShowPass.UseVisualStyleBackColor = true;
+            this.ChkShowPass.CheckedChanged += new System.EventHandler(this.ChkShowPass_CheckedChanged);
             // 
             // label6
             // 
@@ -236,7 +214,7 @@
             this.BtnLog.Location = new System.Drawing.Point(557, 338);
             this.BtnLog.Name = "BtnLog";
             this.BtnLog.Size = new System.Drawing.Size(75, 32);
-            this.BtnLog.TabIndex = 26;
+            this.BtnLog.TabIndex = 8;
             this.BtnLog.Text = "LOGIN";
             this.BtnLog.UseVisualStyleBackColor = true;
             this.BtnLog.Click += new System.EventHandler(this.BtnLog_Click);
@@ -259,24 +237,48 @@
             this.BtnExit.UseVisualStyleBackColor = false;
             this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
+            // TxtPass
+            // 
+            this.TxtPass.BackColor = System.Drawing.Color.Orange;
+            this.TxtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtPass.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPass.ForeColor = System.Drawing.Color.White;
+            this.TxtPass.Location = new System.Drawing.Point(417, 159);
+            this.TxtPass.Name = "TxtPass";
+            this.TxtPass.PasswordChar = '*';
+            this.TxtPass.Size = new System.Drawing.Size(172, 23);
+            this.TxtPass.TabIndex = 2;
+            // 
+            // TxtConfirmPass
+            // 
+            this.TxtConfirmPass.BackColor = System.Drawing.Color.Orange;
+            this.TxtConfirmPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtConfirmPass.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtConfirmPass.ForeColor = System.Drawing.Color.White;
+            this.TxtConfirmPass.Location = new System.Drawing.Point(417, 213);
+            this.TxtConfirmPass.Name = "TxtConfirmPass";
+            this.TxtConfirmPass.PasswordChar = '*';
+            this.TxtConfirmPass.Size = new System.Drawing.Size(172, 23);
+            this.TxtConfirmPass.TabIndex = 3;
+            // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(650, 400);
+            this.Controls.Add(this.TxtConfirmPass);
+            this.Controls.Add(this.TxtPass);
             this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.BtnLog);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.ChkShowPass);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.TxtOTP);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BtnReg);
+            this.Controls.Add(this.BtnSendOTP);
+            this.Controls.Add(this.TxtEmail);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -286,7 +288,6 @@
             this.Name = "FormRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormRegister";
-            this.Load += new System.EventHandler(this.FormRegister_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -301,19 +302,19 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BtnReg;
+        private System.Windows.Forms.Button BtnSendOTP;
+        private System.Windows.Forms.TextBox TxtEmail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtOTP;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.CheckBox ChkShowPass;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnLog;
         private System.Windows.Forms.Button BtnExit;
+        private System.Windows.Forms.TextBox TxtPass;
+        private System.Windows.Forms.TextBox TxtConfirmPass;
     }
 }

@@ -131,7 +131,7 @@
             this.TxtEmail.Location = new System.Drawing.Point(417, 155);
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(172, 23);
-            this.TxtEmail.TabIndex = 4;
+            this.TxtEmail.TabIndex = 1;
             // 
             // TxtPass
             // 
@@ -143,7 +143,7 @@
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.PasswordChar = '*';
             this.TxtPass.Size = new System.Drawing.Size(172, 23);
-            this.TxtPass.TabIndex = 5;
+            this.TxtPass.TabIndex = 2;
             // 
             // BtnReg
             // 
@@ -152,7 +152,7 @@
             this.BtnReg.Location = new System.Drawing.Point(417, 288);
             this.BtnReg.Name = "BtnReg";
             this.BtnReg.Size = new System.Drawing.Size(75, 32);
-            this.BtnReg.TabIndex = 7;
+            this.BtnReg.TabIndex = 4;
             this.BtnReg.Text = "REGISTER";
             this.BtnReg.UseVisualStyleBackColor = true;
             this.BtnReg.Click += new System.EventHandler(this.BtnReg_Click);
@@ -164,7 +164,7 @@
             this.ChkShowPass.Location = new System.Drawing.Point(417, 239);
             this.ChkShowPass.Name = "ChkShowPass";
             this.ChkShowPass.Size = new System.Drawing.Size(93, 17);
-            this.ChkShowPass.TabIndex = 8;
+            this.ChkShowPass.TabIndex = 3;
             this.ChkShowPass.Text = "Show password";
             this.ChkShowPass.UseVisualStyleBackColor = true;
             this.ChkShowPass.CheckedChanged += new System.EventHandler(this.ChkShowPass_CheckedChanged);
@@ -176,7 +176,7 @@
             this.Btn_Login.Location = new System.Drawing.Point(514, 288);
             this.Btn_Login.Name = "Btn_Login";
             this.Btn_Login.Size = new System.Drawing.Size(75, 32);
-            this.Btn_Login.TabIndex = 9;
+            this.Btn_Login.TabIndex = 5;
             this.Btn_Login.Text = "LOGIN";
             this.Btn_Login.UseVisualStyleBackColor = true;
             this.Btn_Login.Click += new System.EventHandler(this.Btn_Login_Click);

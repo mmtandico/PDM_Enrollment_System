@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using BCrypt.Net;
 
 namespace Enrollment_System
 {
@@ -36,23 +37,30 @@ namespace Enrollment_System
                 {
                     conn.Open();
 
-                    string query = "SELECT * FROM Users WHERE email = @Email AND password_hash = SHA2(@Password, 256)";
+                    string query = "SELECT password_hash FROM Users WHERE email = @Email";
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Email", email);
-                        cmd.Parameters.AddWithValue("@Password", password);
 
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
-                            if (reader.HasRows)
+                            if (reader.Read())
                             {
-                                this.Hide();
-                                FormHome home = new FormHome();
-                                home.Show();
+                                string storedHash = reader["password_hash"].ToString();
+                                if (BCrypt.Net.BCrypt.Verify(password, storedHash))
+                                {
+                                    this.Hide();
+                                    FormHome home = new FormHome();
+                                    home.Show();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Invalid Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
                             }
                             else
                             {
-                                MessageBox.Show("Invalid Email or Password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Invalid Email.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
                     }
@@ -72,7 +80,7 @@ namespace Enrollment_System
 
         private void BtnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
