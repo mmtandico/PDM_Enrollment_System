@@ -161,6 +161,7 @@
             this.TxtOTP.Name = "TxtOTP";
             this.TxtOTP.Size = new System.Drawing.Size(172, 23);
             this.TxtOTP.TabIndex = 5;
+            this.TxtOTP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
             // 
