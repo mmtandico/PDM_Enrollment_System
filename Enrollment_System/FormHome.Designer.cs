@@ -28,94 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnHome = new System.Windows.Forms.Button();
+            this.BtnCourses = new System.Windows.Forms.Button();
+            this.BtnEnrollment = new System.Windows.Forms.Button();
+            this.BtnPI = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.BtnExit = new System.Windows.Forms.Button();
             this.BtnLogout = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.BtnExit = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnHome
             // 
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(282, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 37);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "HOME";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnHome.FlatAppearance.BorderSize = 0;
+            this.BtnHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnHome.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnHome.ForeColor = System.Drawing.Color.White;
+            this.BtnHome.Location = new System.Drawing.Point(282, 17);
+            this.BtnHome.Name = "BtnHome";
+            this.BtnHome.Size = new System.Drawing.Size(85, 37);
+            this.BtnHome.TabIndex = 1;
+            this.BtnHome.Text = "HOME";
+            this.BtnHome.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BtnCourses
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(391, 17);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(84, 37);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "COURSES";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnCourses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCourses.FlatAppearance.BorderSize = 0;
+            this.BtnCourses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCourses.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCourses.ForeColor = System.Drawing.Color.White;
+            this.BtnCourses.Location = new System.Drawing.Point(391, 17);
+            this.BtnCourses.Name = "BtnCourses";
+            this.BtnCourses.Size = new System.Drawing.Size(84, 37);
+            this.BtnCourses.TabIndex = 3;
+            this.BtnCourses.Text = "COURSES";
+            this.BtnCourses.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // BtnEnrollment
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(506, 17);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(92, 37);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "ENROLLMENT";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnEnrollment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEnrollment.FlatAppearance.BorderSize = 0;
+            this.BtnEnrollment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEnrollment.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEnrollment.ForeColor = System.Drawing.Color.White;
+            this.BtnEnrollment.Location = new System.Drawing.Point(506, 17);
+            this.BtnEnrollment.Name = "BtnEnrollment";
+            this.BtnEnrollment.Size = new System.Drawing.Size(92, 37);
+            this.BtnEnrollment.TabIndex = 4;
+            this.BtnEnrollment.Text = "ENROLLMENT";
+            this.BtnEnrollment.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnPI
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(637, 17);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 37);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "PERSONAL INFORMATION";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnPI.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPI.FlatAppearance.BorderSize = 0;
+            this.BtnPI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPI.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPI.ForeColor = System.Drawing.Color.White;
+            this.BtnPI.Location = new System.Drawing.Point(637, 17);
+            this.BtnPI.Name = "BtnPI";
+            this.BtnPI.Size = new System.Drawing.Size(141, 37);
+            this.BtnPI.TabIndex = 2;
+            this.BtnPI.Text = "PERSONAL INFORMATION";
+            this.BtnPI.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -127,8 +131,36 @@
             this.panel1.Size = new System.Drawing.Size(1288, 36);
             this.panel1.TabIndex = 5;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.BtnExit);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(1238, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(50, 36);
+            this.panel5.TabIndex = 0;
+            // 
+            // BtnExit
+            // 
+            this.BtnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(44)))), ((int)(((byte)(21)))));
+            this.BtnExit.FlatAppearance.BorderSize = 0;
+            this.BtnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(44)))), ((int)(((byte)(21)))));
+            this.BtnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(44)))), ((int)(((byte)(21)))));
+            this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExit.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExit.ForeColor = System.Drawing.Color.White;
+            this.BtnExit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnExit.Location = new System.Drawing.Point(11, 5);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(32, 27);
+            this.BtnExit.TabIndex = 28;
+            this.BtnExit.Text = "x";
+            this.BtnExit.UseVisualStyleBackColor = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
             // BtnLogout
             // 
+            this.BtnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnLogout.ForeColor = System.Drawing.Color.White;
             this.BtnLogout.Location = new System.Drawing.Point(10, 24);
@@ -173,23 +205,45 @@
             this.panel3.Size = new System.Drawing.Size(1288, 72);
             this.panel3.TabIndex = 7;
             // 
-            // BtnExit
+            // panel7
             // 
-            this.BtnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(44)))), ((int)(((byte)(21)))));
-            this.BtnExit.FlatAppearance.BorderSize = 0;
-            this.BtnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(44)))), ((int)(((byte)(21)))));
-            this.BtnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(44)))), ((int)(((byte)(21)))));
-            this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnExit.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnExit.ForeColor = System.Drawing.Color.White;
-            this.BtnExit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnExit.Location = new System.Drawing.Point(11, 5);
-            this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(32, 27);
-            this.BtnExit.TabIndex = 28;
-            this.BtnExit.Text = "x";
-            this.BtnExit.UseVisualStyleBackColor = false;
-            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(204, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(989, 72);
+            this.panel7.TabIndex = 30;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.BtnCourses);
+            this.panel9.Controls.Add(this.BtnEnrollment);
+            this.panel9.Controls.Add(this.BtnHome);
+            this.panel9.Controls.Add(this.BtnPI);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(989, 72);
+            this.panel9.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Controls.Add(this.label2);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(204, 72);
+            this.panel6.TabIndex = 29;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.BtnLogout);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(1193, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(95, 72);
+            this.panel4.TabIndex = 28;
             // 
             // pictureBox1
             // 
@@ -198,7 +252,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 108);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1288, 655);
+            this.pictureBox1.Size = new System.Drawing.Size(1288, 641);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
@@ -210,6 +264,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1910, 308);
             this.panel2.TabIndex = 10;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.pictureBox2);
+            this.panel8.Controls.Add(this.label3);
+            this.panel8.Controls.Add(this.label4);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(899, 308);
+            this.panel8.TabIndex = 6;
             // 
             // pictureBox2
             // 
@@ -245,73 +310,13 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "PAMBAYANG DALUHASAAN NG MARILAO";
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.BtnLogout);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1193, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(95, 72);
-            this.panel4.TabIndex = 28;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.BtnExit);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1238, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(50, 36);
-            this.panel5.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label1);
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(204, 72);
-            this.panel6.TabIndex = 29;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.panel9);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(204, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(989, 72);
-            this.panel7.TabIndex = 30;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.pictureBox2);
-            this.panel8.Controls.Add(this.label3);
-            this.panel8.Controls.Add(this.label4);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(899, 308);
-            this.panel8.TabIndex = 6;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.button3);
-            this.panel9.Controls.Add(this.button4);
-            this.panel9.Controls.Add(this.button1);
-            this.panel9.Controls.Add(this.button2);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(989, 72);
-            this.panel9.TabIndex = 0;
-            // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1288, 763);
+            this.ClientSize = new System.Drawing.Size(1288, 749);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
@@ -324,27 +329,27 @@
             this.Text = "FormHome";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnHome;
+        private System.Windows.Forms.Button BtnPI;
+        private System.Windows.Forms.Button BtnCourses;
+        private System.Windows.Forms.Button BtnEnrollment;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnLogout;
         private System.Windows.Forms.Label label2;

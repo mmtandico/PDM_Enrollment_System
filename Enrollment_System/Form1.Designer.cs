@@ -147,6 +147,7 @@
             // 
             // BtnReg
             // 
+            this.BtnReg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnReg.ForeColor = System.Drawing.Color.White;
             this.BtnReg.Location = new System.Drawing.Point(417, 288);
@@ -171,6 +172,7 @@
             // 
             // Btn_Login
             // 
+            this.Btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Login.ForeColor = System.Drawing.Color.White;
             this.Btn_Login.Location = new System.Drawing.Point(514, 288);

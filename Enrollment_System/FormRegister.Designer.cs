@@ -96,6 +96,7 @@
             // 
             // BtnReg
             // 
+            this.BtnReg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnReg.ForeColor = System.Drawing.Color.White;
             this.BtnReg.Location = new System.Drawing.Point(467, 338);
@@ -108,6 +109,7 @@
             // 
             // BtnSendOTP
             // 
+            this.BtnSendOTP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSendOTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSendOTP.ForeColor = System.Drawing.Color.White;
             this.BtnSendOTP.Location = new System.Drawing.Point(379, 338);
@@ -210,6 +212,7 @@
             // 
             // BtnLog
             // 
+            this.BtnLog.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLog.ForeColor = System.Drawing.Color.White;
             this.BtnLog.Location = new System.Drawing.Point(557, 338);
