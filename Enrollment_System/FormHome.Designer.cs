@@ -83,6 +83,8 @@
             // 
             this.BtnCourses.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCourses.FlatAppearance.BorderSize = 0;
+            this.BtnCourses.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnCourses.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BtnCourses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCourses.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCourses.ForeColor = System.Drawing.Color.White;
@@ -97,6 +99,8 @@
             // 
             this.BtnEnrollment.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEnrollment.FlatAppearance.BorderSize = 0;
+            this.BtnEnrollment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnEnrollment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BtnEnrollment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEnrollment.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEnrollment.ForeColor = System.Drawing.Color.White;
@@ -111,6 +115,8 @@
             // 
             this.BtnPI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnPI.FlatAppearance.BorderSize = 0;
+            this.BtnPI.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnPI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.BtnPI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPI.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPI.ForeColor = System.Drawing.Color.White;
