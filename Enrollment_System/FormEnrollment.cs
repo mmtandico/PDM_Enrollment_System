@@ -10,26 +10,11 @@ using System.Windows.Forms;
 
 namespace Enrollment_System
 {
-    public partial class FormHome : Form
+    public partial class FormEnrollment : Form
     {
-        public FormHome()
+        public FormEnrollment()
         {
             InitializeComponent();
-            this.Text = "Welcome to Enrollment System";
-        }
-
-
-
-        private void BtnLogout_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                new FormLogin().Show();
-                this.Close();
-            }
-
         }
 
         private void BtnExit_Click(object sender, EventArgs e)
@@ -43,10 +28,10 @@ namespace Enrollment_System
             new FormCourse().Show();
         }
 
-        private void BtnEnrollment_Click(object sender, EventArgs e)
+        private void BtnHome_Click(object sender, EventArgs e)
         {
             this.Close();
-            new FormEnrollment().Show();
+            new FormHome().Show();
         }
 
         private void BtnPI_Click(object sender, EventArgs e)
@@ -59,6 +44,17 @@ namespace Enrollment_System
         {
             this.Close();
             new FormDatabaseInfo().Show();
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Logout Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                new FormLogin().Show();
+                this.Close();
+            }
         }
     }
 }

@@ -41,14 +41,15 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.BtnDataBase = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -56,10 +57,10 @@
             this.panel9.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnHome
@@ -94,6 +95,7 @@
             this.BtnCourses.TabIndex = 3;
             this.BtnCourses.Text = "COURSES";
             this.BtnCourses.UseVisualStyleBackColor = true;
+            this.BtnCourses.Click += new System.EventHandler(this.BtnCourses_Click);
             // 
             // BtnEnrollment
             // 
@@ -110,6 +112,7 @@
             this.BtnEnrollment.TabIndex = 4;
             this.BtnEnrollment.Text = "ENROLLMENT";
             this.BtnEnrollment.UseVisualStyleBackColor = true;
+            this.BtnEnrollment.Click += new System.EventHandler(this.BtnEnrollment_Click);
             // 
             // BtnPI
             // 
@@ -126,6 +129,7 @@
             this.BtnPI.TabIndex = 2;
             this.BtnPI.Text = "PERSONAL INFORMATION";
             this.BtnPI.UseVisualStyleBackColor = true;
+            this.BtnPI.Click += new System.EventHandler(this.BtnPI_Click);
             // 
             // panel1
             // 
@@ -134,14 +138,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1288, 36);
+            this.panel1.Size = new System.Drawing.Size(1300, 36);
             this.panel1.TabIndex = 5;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.BtnExit);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1238, 0);
+            this.panel5.Location = new System.Drawing.Point(1250, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(50, 36);
             this.panel5.TabIndex = 0;
@@ -208,7 +212,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 36);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1288, 72);
+            this.panel3.Size = new System.Drawing.Size(1300, 72);
             this.panel3.TabIndex = 7;
             // 
             // panel7
@@ -217,11 +221,12 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(204, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(989, 72);
+            this.panel7.Size = new System.Drawing.Size(1001, 72);
             this.panel7.TabIndex = 30;
             // 
             // panel9
             // 
+            this.panel9.Controls.Add(this.BtnDataBase);
             this.panel9.Controls.Add(this.BtnCourses);
             this.panel9.Controls.Add(this.BtnEnrollment);
             this.panel9.Controls.Add(this.BtnHome);
@@ -229,8 +234,25 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(989, 72);
+            this.panel9.Size = new System.Drawing.Size(1001, 72);
             this.panel9.TabIndex = 0;
+            // 
+            // BtnDataBase
+            // 
+            this.BtnDataBase.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDataBase.FlatAppearance.BorderSize = 0;
+            this.BtnDataBase.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnDataBase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnDataBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDataBase.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDataBase.ForeColor = System.Drawing.Color.White;
+            this.BtnDataBase.Location = new System.Drawing.Point(815, 17);
+            this.BtnDataBase.Name = "BtnDataBase";
+            this.BtnDataBase.Size = new System.Drawing.Size(141, 37);
+            this.BtnDataBase.TabIndex = 6;
+            this.BtnDataBase.Text = "DATABASE INFORMATION";
+            this.BtnDataBase.UseVisualStyleBackColor = true;
+            this.BtnDataBase.Click += new System.EventHandler(this.BtnDataBase_Click);
             // 
             // panel6
             // 
@@ -246,21 +268,10 @@
             // 
             this.panel4.Controls.Add(this.BtnLogout);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1193, 0);
+            this.panel4.Location = new System.Drawing.Point(1205, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(95, 72);
             this.panel4.TabIndex = 28;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Enrollment_System.Properties.Resources.P9700277_1_1024x576;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 108);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1288, 641);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -316,13 +327,24 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "PAMBAYANG DALUHASAAN NG MARILAO";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Enrollment_System.Properties.Resources.P9700277_1_1024x576;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 108);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1300, 642);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1288, 749);
+            this.ClientSize = new System.Drawing.Size(1300, 750);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
@@ -342,11 +364,11 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -373,5 +395,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button BtnDataBase;
     }
 }
