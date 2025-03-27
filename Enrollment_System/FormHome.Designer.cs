@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.BtnHome = new System.Windows.Forms.Button();
             this.BtnCourses = new System.Windows.Forms.Button();
             this.BtnEnrollment = new System.Windows.Forms.Button();
@@ -49,6 +50,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -327,6 +329,10 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "PAMBAYANG DALUHASAAN NG MARILAO";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Enrollment_System.Properties.Resources.P9700277_1_1024x576;
@@ -396,5 +402,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button BtnDataBase;
+        private System.Windows.Forms.Timer timer1;
     }
 }
