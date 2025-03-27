@@ -184,6 +184,15 @@
   <ItemGroup>
     <None Include="Resources\BGIMAGE2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animation - 1743082348856.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animation - 1743082993565.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PROFILE.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

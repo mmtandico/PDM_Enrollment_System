@@ -20,7 +20,7 @@ namespace Enrollment_System
             InitializeComponent();
             this.Text = "Welcome to Enrollment System";
 
-            // Initialize the images from resources
+            
             images = new Image[]
             {
                 Properties.Resources.P9700277_1_1024x576,      
